@@ -1,0 +1,29 @@
+{
+  "name": "bulk-emails",
+  "version": "1.0.0",
+  "description": "A script written in NodeJS from which you can send emails to different email IDs at the same time in a single command line.",
+  "main": "main.js",
+  "scripts": {
+    "start": "env-cmd ./.env node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VaibhavPaliwal0007/Bulk-Emails.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VaibhavPaliwal0007/Bulk-Emails/issues"
+  },
+  "homepage": "https://github.com/VaibhavPaliwal0007/Bulk-Emails#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "env-cmd": "^8.0.1",
+    "googleapis": "^87.0.0",
+    "nodemailer": "^6.6.3",
+    "read-excel-file": "^5.2.10"
+  }
+}
