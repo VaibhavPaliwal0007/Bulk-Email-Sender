@@ -13,7 +13,7 @@ const sendMail = async (reciever, subject, htmlTemplate) => {
             pool: true,
             auth: {
                 type: "login",
-                user: email.trimRight(),
+                user: email,
                 pass: pass
             },
             connectionTimeout: 30000,
@@ -21,7 +21,7 @@ const sendMail = async (reciever, subject, htmlTemplate) => {
         })
 
         let mail = {
-            from: email.trimRight(),
+            from: email,
             to: reciever,
             subject: subject,     
             html: htmlTemplate,

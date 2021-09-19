@@ -62,7 +62,76 @@ a, a:hover {
         <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" width="560" style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit;
 	max-width: 560px;" class="container">
 
+          <!-- HEADER -->
+          <!-- Set text color and font family ("sans-serif" or "Georgia, serif") -->
+          <tr>
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 24px; font-weight: bold; line-height: 130%;
+			padding-top: 25px;
+			color: #000000;
+			font-family: sans-serif;" class="header">
+              Welcome To HashDefine
+          </tr>
 
+
+          <!-- HERO IMAGE -->
+          <!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 (wrapper x2). Do not set height for flexible images (including "auto"). URL format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content={{Ìmage-Name}}&utm_campaign={{Campaign-Name}} -->
+          <tr>
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+			padding-top: 20px;" class="hero"><a target="_blank" style="text-decoration: none;"
+                href="https://github.com/konsav/email-templates/"><img border="0" vspace="0" hspace="0"
+                  src="https://avatars1.githubusercontent.com/u/52865452?s=400&v=4"
+                  alt="Please enable images to view this content" title="Hero Image"
+                  style="
+			width: 100%;
+			max-width: 560px;
+			color: #000000; font-size: 13px; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;" /></a></td>
+          </tr>
+
+          <!-- PARAGRAPH -->
+          <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+          <tr>
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400; line-height: 160%;
+			padding-top: 25px; 
+			color: #000000;
+			font-family: sans-serif;" class="paragraph"><strong>
+                We have started a Developer Circle in different colleges as #Define for the betterment of the colleges
+                and college students in terms of coding, development and many more.
+              </strong>
+            </td>
+          </tr>
+
+          <!-- BUTTON -->
+          <!-- Set button background color at TD, link/text color at A and TD, font family ("sans-serif" or "Georgia, serif") at TD. For verification codes add "letter-spacing: 5px;". Link format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content={{Button-Name}}&utm_campaign={{Campaign-Name}} -->
+          <tr>
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
+			padding-top: 25px;
+			padding-bottom: 5px;" class="button"><a href="http://hashdefinebpit.netlify.app/" target="_blank"
+                style="text-decoration: none;">
+                <table border="0" cellpadding="0" cellspacing="0" align="center"
+                  style="max-width: 240px; min-width: 120px; border-collapse: collapse; border-spacing: 0; padding: 0;">
+                  <tr>
+                    <td align="center" valign="middle"
+                      style="padding: 12px 24px; margin: 0; text-decoration: none; border-collapse: collapse; border-spacing: 0; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px;"
+                      bgcolor="#E9703E"><a target="_blank" style="text-decoration: none;
+					color: #FFFFFF; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 120%;"
+                        href="http://hashdefinebpit.netlify.app/">
+                        Visit our site
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </a>
+            </td>
+          </tr>
+
+          <!-- LINE -->
+          <!-- Set line color -->
+          <tr>
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
+			padding-top: 25px;" class="line">
+              <hr color="#E0E0E0" align="center" width="100%" size="1" noshade style="margin: 0; padding: 0;" />
+            </td>
+          </tr>
 
           <!-- LIST -->
           <tr>
@@ -199,4 +268,5 @@ a, a:hover {
 </body>
 
 </html>`
+
 module.exports = { htmlTemplate }
