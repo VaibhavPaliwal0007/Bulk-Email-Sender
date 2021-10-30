@@ -7,10 +7,11 @@ const sendMail = async (reciever, subject, htmlTemplate) => {
 
     try{
         const transport = nodemailer.createTransport({
-            host: "smtp.googlemail.com",
+            host: "smtp.gmail.com",
             port: 465,
             secure: true, 
             pool: true,
+            // service: 'gmail',
             auth: {
                 type: "login",
                 user: email,
@@ -29,7 +30,7 @@ const sendMail = async (reciever, subject, htmlTemplate) => {
                 "x-priority": "1",
                 "x-msmail-priority": "High",
                 importance: "high"
-              }
+            }
         }
 
         const result = await transport.sendMail(mail)
