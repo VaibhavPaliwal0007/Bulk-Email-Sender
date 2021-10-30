@@ -4,7 +4,7 @@ const { htmlTemplate } = require('../templates/test')
 const sendMails = async (mails) => {
     try{
         await Gmail.sendGmail(mails, "Ignore!", htmlTemplate)
-        return console.log('Email sent to ' + mails)
+        console.log('Email sent to ' + mails)
     }
 
     catch(err){
