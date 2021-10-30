@@ -1,4 +1,4 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+const htmlTemplate = `<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -201,4 +201,6 @@ a, a:hover {
 
 </body>
 
-</html>
+</html>`;
+
+module.exports = { htmlTemplate };
