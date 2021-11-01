@@ -30,7 +30,7 @@ const sendGmail = async (reciever, subject, htmlTemplate) => {
            subject: subject,
            text: "hello from another side",
            html: htmlTemplate,
-           text: "Hello world?",
+        //    text: "Hello world?",
            header: {
             "x-priority": "1",
             "x-msmail-priority": "High",

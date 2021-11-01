@@ -7,17 +7,17 @@ const sendMail = async (reciever, subject, htmlTemplate) => {
 
     try{
         const transport = nodemailer.createTransport({
-            host: "smtp.gmail.com",
-            port: 465,
-            secure: true, 
-            pool: true,
-            // service: 'gmail',
+            // host: "smtp.gmail.com",
+            // port: 465,
+            // secure: true, 
+            // pool: true,
+            service: 'gmail',
             auth: {
                 type: "login",
                 user: email,
                 pass: pass
             },
-            connectionTimeout: 30000,
+            // connectionTimeout: 30000,
             maxMessages: 500
         })
 

@@ -1,9 +1,9 @@
 const email = require('../src/email')
-const { htmlTemplate } = require('../templates/test')
+const { htmlTemplate } = require('../templates/aarnavevent')
 
 const sendMails = async (mails) => {
     try{
-       await email.sendMail(mails, "Ignore", htmlTemplate)
+       await email.sendMail(mails, "Reminder, for the event @6pm!!", htmlTemplate)
        console.log('Email sent to ' + mails)
     }
 

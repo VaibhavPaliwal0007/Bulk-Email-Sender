@@ -1,9 +1,9 @@
 const Gmail = require('../src/gmail')
-const { htmlTemplate } = require('../templates/test')
+const { htmlTemplate } = require('../templates/aarnavevent')
 
 const sendMails = async (mails) => {
     try{
-        await Gmail.sendGmail(mails, "Ignore!", htmlTemplate)
+        await Gmail.sendGmail(mails, "Reminder for the event!!!!!", htmlTemplate)
         console.log('Email sent to ' + mails)
     }
 

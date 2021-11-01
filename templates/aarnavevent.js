@@ -84,6 +84,7 @@ a, a:hover {
 					padding-top: 25px;
 					color: #000000;
 					font-family: sans-serif;" class="paragraph">
+                    <img width="500px" src="https://i.imgur.com/e5T6g54_d.webp?maxwidth=640&shape=thumb&fidelity=medium" alt="Logo">
                     <h3 style="color: #333333;">Reminder 📌</h3>
                     Greetings 👋,<br /><br />
                     Just a friendly reminder to join the session on the topic <strong>HOW TO GET STARTED WITH
