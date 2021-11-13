@@ -1,5 +1,5 @@
 const email = require('../src/email')
-const { htmlTemplate } = require('../templates/aarnavevent')
+const { htmlTemplate } = require('../templates/paytonmiller')
 
 const sendMails = async (mails) => {
     try{
