@@ -6,14 +6,14 @@ const namesMail = async() => {
     try{
         const rows = await excel('./Excel/content.xlsx',)
         for (i in rows){
-            await sendMails(rows[i][0])
+            await sendMails(rows[i][0], rows[i][1]);
         }
     }
 
     catch(e){
         console.log(e)
     }
-}
+};
 
 const namesGmail = async() => {
     try{
@@ -27,4 +27,4 @@ const namesGmail = async() => {
     }
 }
 
-module.exports = { mail: namesMail, gmail: namesGmail }
+module.exports = { mail: namesMail, gmail: namesGmail };

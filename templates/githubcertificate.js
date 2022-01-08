@@ -1,4 +1,4 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+const htmlTemplate = `<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -204,12 +204,6 @@ a, a:hover {
 </body>
 
 </html>
+`;
 
-<!-- Greetings from #define
-
-Hope you liked the session on Introduction to Git and GitHub by Dhairya Bahl.
-
-Enclosed is your certificate for the session, do post it on your LinkedIn  and don't forget to tag Dhairya Bahl (https://www.linkedin.com/in/dhairya-bahl).
-
-Regards
-Team #define -->
+module.exports = { htmlTemplate };

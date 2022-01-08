@@ -4,7 +4,7 @@ require('dotenv').config();
 const email = process.env.email
 const pass = process.env.pass
 
-const sendMail = async (reciever, subject, htmlTemplate) => {
+const sendMail = async (reciever, subject, htmlTemplate, certificate) => {
 
     try{
         const transport = nodemailer.createTransport({
@@ -31,7 +31,13 @@ const sendMail = async (reciever, subject, htmlTemplate) => {
                 "x-priority": "1",
                 "x-msmail-priority": "High",
                 importance: "high"
-            }
+            },
+            attachments: [
+                {
+                    filename: 'certificate.png',
+                    path: certificate
+                }
+            ]
         }
 
         const result = await transport.sendMail(mail)

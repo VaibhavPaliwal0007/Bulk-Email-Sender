@@ -1,14 +1,15 @@
-const email = require('../src/email')
-const { htmlTemplate } = require('../templates/githubmlsa.js')
+const email = require('../src/email');
+const { htmlTemplate } = require('../templates/githubcertificate.js');
 
-const sendMails = async (mails) => {
+const sendMails = async (mails, name) => {
     try{
-       await email.sendMail(mails, "Reminder, for the event @6pm!!", htmlTemplate)
-       console.log('Email sent to ' + mails)
+       const certificate = __dirname + `/../Certificates/${name}.png`;
+       await email.sendMail(mails, "Here is your certificate from Microsoft!!", htmlTemplate, certificate);
+       console.log('Email sent to ' + mails);
     }
 
    catch(err){
-       return console.log(err)
+       throw err;
    }
 }
 
