@@ -1,5 +1,6 @@
 const nodemailer = require('nodemailer')
 const { oAuth2Client } = require('./gmailapi')
+require('dotenv').config();
 
 const sendGmail = async (reciever, subject, htmlTemplate) => {
     

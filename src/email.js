@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer')
+require('dotenv').config();
 
 const email = process.env.email
 const pass = process.env.pass
@@ -7,10 +8,10 @@ const sendMail = async (reciever, subject, htmlTemplate) => {
 
     try{
         const transport = nodemailer.createTransport({
-            // host: "smtp.gmail.com",
-            // port: 465,
-            // secure: true, 
-            // pool: true,
+            host: "smtp.gmail.com",
+            port: 465,
+            secure: true, 
+            pool: true,
             service: 'gmail',
             auth: {
                 type: "login",

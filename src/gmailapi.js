@@ -1,4 +1,5 @@
 const { google } = require('googleapis')
+require('dotenv').config();
 
 const id = process.env.CLIENT_ID
 const secret = process.env.CLIENT_SECRET
