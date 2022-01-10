@@ -1,5 +1,5 @@
 const email = require('../src/email');
-const { htmlTemplate } = require('../templates/githubcertificate.js');
+const { htmlTemplate } = require('../templates/devopscertificate.js');
 
 const sendMails = async (mails, name) => {
     try{
