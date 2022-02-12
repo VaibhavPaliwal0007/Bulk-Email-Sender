@@ -1,5 +1,5 @@
 const email = require('../src/email')
-const { htmlTemplate } = require('../templates/githubmlsa.js')
+const { htmlTemplate } = require('../templates/cpaakashchaudarie')
 
 const sendMails = async (mails) => {
     try{

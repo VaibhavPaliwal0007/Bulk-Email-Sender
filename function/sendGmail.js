@@ -1,5 +1,5 @@
 const Gmail = require('../src/gmail')
-const { htmlTemplate } = require('../templates/githubmlsa')
+const { htmlTemplate } = require('../templates/cpaakashchaudarie')
 
 const sendMails = async (mails) => {
     try{
