@@ -1,5 +1,5 @@
 const email = require('../src/email')
-const { htmlTemplate } = require('../templates/cpaakashchaudarie')
+const { htmlTemplate } = require('../templates/mlops')
 
 const sendMails = async (mails) => {
     try{
